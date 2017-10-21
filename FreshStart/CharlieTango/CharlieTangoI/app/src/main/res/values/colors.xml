@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#795548</color>
+    <color name="colorPrimaryDark">#5D4037</color>
+    <color name="colorAccent">#ba2891</color>
+
+    <color name="caffeineGreaterThan10">#F44336</color>
+    <color name="caffeineLessThan8">#F57C00</color>
+    <color name="caffeineLessThan5">#FFEB3B</color>
+    <color name="caffeineLessThan3">#76FF03</color>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight">
+
+    <ImageView
+        android:layout_margin="12dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/image_view"
+        tools:src="@drawable/nes"/>
+<!--
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:id="@+id/coffee_type"
+            tools:text="Bru Instant"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:id="@+id/ruppees"
+            tools:text="10/-"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/coffee_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            tools:text="Bru Instant" />
+
+        <TextView
+            android:id="@+id/ruppees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="20sp"
+            tools:text="10/-" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        android:background="@drawable/caffeine_circle"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:id="@+id/caffeine_circle"
+        tools:text="10gm"
+        android:textColor="@android:color/white"
+        android:gravity="center"/>
+
+
+</LinearLayout>

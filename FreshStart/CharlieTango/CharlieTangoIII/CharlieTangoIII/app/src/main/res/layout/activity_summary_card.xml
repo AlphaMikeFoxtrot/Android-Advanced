@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.anonymous.charlietangoiii.SummaryCard">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GENERAL VALUES FOR ONE PACKET"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:textStyle="bold"
+            android:id="@+id/brand_image"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/nes" />
+
+        <TextView
+            android:id="@+id/coffee_type"
+            android:fontFamily="serif-monospace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="NESCAFE SUNRISE"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+
+            <TextView
+                android:fontFamily="serif-monospace"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="mrp"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:fontFamily="serif-monospace"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:text="10/-"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:id="@+id/mrp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+
+            <TextView
+                android:fontFamily="serif-monospace"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="net weight"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:fontFamily="serif-monospace"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="left"
+                android:maxLength="6"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:text="8 grams"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:id="@+id/weight"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+
+            <TextView
+                android:fontFamily="serif-monospace"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="amount of coffee"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:fontFamily="serif-monospace"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="left"
+                android:layout_width="0dp"
+                android:maxLength="6"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:text="4.8 grams"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:id="@+id/coffee_amount"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+
+            <TextView
+                android:ellipsize="end"
+                android:lines="2"
+                android:fontFamily="serif-monospace"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="caffeine"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:fontFamily="serif-monospace"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:text="1.6 milligrams"
+                android:maxLength="6"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:id="@+id/caffeine_amount"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="amount of packets consumed"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:fontFamily="serif-monospace"/>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/less_button_packets"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_action_remove"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/no_of_packets"
+            tools:text="4"
+            android:text="1"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/more_button_packets"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_action_add"/>
+
+    </LinearLayout>
+
+</LinearLayout>

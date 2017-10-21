@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#1976D2</color>
+
+    <!-- Magnitude circle color for an earthquake with caffeine_amount_ between 2 and 3 -->
+    <color name="caffeine_amount_2">#00FF00</color>
+
+    <!-- Magnitude circle color for an earthquake with caffeine_amount_ between 3 and 4 -->
+    <color name="caffeine_amount_3">#7CFF00</color>
+
+    <!-- Magnitude circle color for an earthquake with caffeine_amount_ between 4 and 5 -->
+    <color name="caffeine_amount_4">#B0FF00</color>
+
+    <!-- Magnitude circle color for an earthquake with caffeine_amount_ between 5 and 6 -->
+    <color name="caffeine_amount_5">#E5FF00</color>
+
+    <!-- Magnitude circle color for an earthquake with caffeine_amount_ between 6 and 7 -->
+    <color name="caffeine_amount_6">#FC6644</color>
+
+    <!-- Magnitude circle color for an earthquake with caffeine_amount_ between 7 and 8 -->
+    <color name="caffeine_amount_7">#FFAF00</color>
+
+    <!-- Magnitude circle color for an earthquake with caffeine_amount_ between 8 and 9 -->
+    <color name="caffeine_amount_8">#FF7B00</color>
+
+    <!-- Magnitude circle color for an earthquake with caffeine_amount_ between 9 and 10 -->
+    <color name="caffeine_amount_9">#FF3400</color>
+
+    <!-- Magnitude circle color for an earthquake with caffeine_amount_ over 10 -->
+    <color name="caffeine_amount_10plus">#FF0000</color>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_marginBottom="12dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight">
+
+    <ImageView
+        android:id="@+id/book_cover"
+        android:padding="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        tools:src="@mipmap/ic_book_cover_test"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.72"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    tools:text="The murder of Roger Ackroyd"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/authors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    tools:text="Agatha Christie" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/publish_date"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="2012"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textSize="12sp"
+            tools:text="classic comic book creation Tintin is one of the most iconic characters in children's books. These highly collectible editions of the original 24 adventures will delight Tintin fans old and new. Perfect for lovers of graphic novels, mysteries and historical adventures. The world's most famous travelling reporter sets out in search of Red Rackham's treasure. Determined to find the treasure of the notorious pirate Red Rackham, Tintin and Captain Haddock set sail aboard the Sirius to find the shipwreck of the Unicorn. With the help of an ingenious shark-shaped submarine, Tintin follows the clues deep down on this ocean adventure. The Adventures of Tintin are among the best books for readers aged 8 and up. Herg� (Georges Remi) was born in Brussels in 1907. Over the course of 54 years he completed over 20 titles in The Adventures of Tintin series, which is now considered to be one of the greatest, if not the greatest, comics series of all time. Have you collected all 24 graphic novel adventures? Tintin in the Land of the Soviets Tintin in the Congo Tintin in America Tintin: Cigars of the Pharaoh Tintin: The Blue Lotus Tintin: The Broken Ear Tintin: The Black Island Tintin: King Ottakar's Sceptre Tintin: The Crab with the Golden Claws Tintin: The Shooting Star Tintin: The Secret of the Unicorn Tintin: Red Rackham's Treasure Tintin: The Seven Crystal Balls Tintin: Prisoners of the Sun Tintin: Land of Black Gold Tintin: Destination Moon Tintin: Explorers of the Moon Tintin: The Calculus Affair Tintin: The Red Sea Sharks Tintin in Tibet Tintin: The Castafiore Emerald Tintin: Flight 714 to Sydney The Adventures of Tintin and the Picaros Tintin and Alph-Art"/>
+
+    </LinearLayout>
+
+</LinearLayout>
