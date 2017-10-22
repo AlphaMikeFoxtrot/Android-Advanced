@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Books</string>
+    <string name="scroll_view">A fragment is an Android component that holds part of the behavior and/or UI of an activity. As the name would suggest, fragments are not independent entities, but are tied to a single activity.\r\nIn many ways, they have functionality similar to that of activities.\r\nImagine for a moment that you\u2019re an activity. You have a lot to do, so you might employ a few minions to run around and do your laundry and taxes in exchange for lodging and food. That\u2019s kind of like the relationship between activities and fragments.\r\nIn the same way that you don\u2019t actually need an army of little helpers to do your bidding, you don\u2019t have to use fragments. However, if you do use them and use them well, they can provide:\nThe ponits goes here: ;::::: \n</string>
 </resources>

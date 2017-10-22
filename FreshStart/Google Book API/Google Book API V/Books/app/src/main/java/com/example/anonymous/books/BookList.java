@@ -5,6 +5,8 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -22,12 +24,16 @@ import java.util.ArrayList;
 public class BookList extends AppCompatActivity {
 
     public ListView booksListView;
+    Button book_info;
+    Intent toBookInfo;
     public ListViewAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_list);
+
+        book_info = (Button) findViewById(R.id.bookInfo);
 
         final String SAMPLE_JSON_RESPONSE = "{\n" +
                 " \"kind\": \"books#volumes\",\n" +
@@ -1433,6 +1439,14 @@ public class BookList extends AppCompatActivity {
                 "}\n";
 
         Intent intent = getIntent();
+
+        toBookInfo = new Intent(getApplicationContext(), BookDetails.class);
+        book_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(toBookInfo);
+            }
+        });
 
         booksListView = (ListView) findViewById(R.id.list_view);
         ArrayList<Books> booksArrayList = null;

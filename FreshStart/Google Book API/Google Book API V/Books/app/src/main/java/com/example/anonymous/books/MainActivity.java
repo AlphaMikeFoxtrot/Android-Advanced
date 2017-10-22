@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
             author.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    Intent toBookInfo = new Intent(MainActivity.this, BookDetails.class);
+                    startActivity(toBookInfo);
                     String url = "https://www.googleapis.com/books/v1/volumes?q=inauthor:" + search_query.getText().toString().replace(" ", "+") + "&maxResults=20";
                     toLv.putExtra("url", url.toString());
                     startActivity(toLv);
